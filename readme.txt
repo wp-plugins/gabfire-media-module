@@ -17,7 +17,7 @@ This plugin is maintained by the folks over at http://www.gabfirethemes.com
 
 = Sample Code =
 `
-gabfire_media(array(
+gabfire_mediaplugin(array(
 	'name' => 'figure', 
 	'imgtag' => 1,
 	'link' => 1,
