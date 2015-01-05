@@ -1,4 +1,4 @@
-=== Gabfire Widget Pack ===
+=== Gabfire Media Module ===
 Contributors: gabfire
 Tags: video, html5 video, oembed, videojs, featured image, post thumbnail
 Requires at least: 3.8
