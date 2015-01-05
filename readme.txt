@@ -31,33 +31,32 @@ gabfire_mediaplugin(array(
 	'default_name' => 'defaultimage.png'
 )); 
 `
+**name**
+Name of post thumbnail to be used thats going to be resized to display featured image
+ 
+**imgtag**
+1 or 0. Using this option you can add/remove '<img src' tag to image. 
 
-*name*
- Name of post thumbnail to be used thats going to be resized to display featured image
+**link**
+1 or 0. If set 1, the image will have a link to post
  
-*imgtag*
- 1 or 0. Using this option you can add/remove '<img src' tag to image. 
+**enable_thumb**
+1 or 0. You may want to use this option function just to get featured post thumbnails
+ 
+**enable_video**
+1 or 0. You may want to use this option function just to get videos
+ 
+**resize_type**
+c, w, or h. c will crop image to exact size. w resizes the width and calculates height in proportion. h resizes the height and calculates width in proportion.
+ 
+**thumb_align**
+adds a class to media
+ 
+**enable_default**
+1 or 0. You can set a default image to display if post has no media
 
-*link*
- 1 or 0. If set 1, the image will have a link to post
- 
-*enable_thumb*
- 1 or 0. You may want to use this option function just to get featured post thumbnails
- 
-*enable_video*
- 1 or 0. You may want to use this option function just to get videos
- 
-*resize_type*
- c, w, or h. c will crop image to exact size. w resizes the width and calculates height in proportion. h resizes the height and calculates width in proportion.
- 
-*thumb_align*
- adds a class to media
- 
-*enable_default*
- 1 or 0. You can set a default image to display if post has no media
-
-*default_name*
- name of image to display. The image path is yourtheme/images/thumbs directory.
+**default_name**
+name of image to display. The image path is yourtheme/images/thumbs directory.
 
 = How to Add a Video =
 * For Youtube/Vimeo/Dailymotion -> copy video URL from browser bar -> add it via custom field to your post using key name *iframe*
