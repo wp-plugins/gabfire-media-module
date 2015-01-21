@@ -7,11 +7,17 @@ Stable tag: 0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Gabfire Media Module extends the functionality of WordPress Featured Image to support Videos and Default Post Images.
+Gabfire Media Module extends the functionality of Featured Image to support Videos and Default Post Images.
 
 == Description ==
 
-Videos and pictures don't have to be difficult. Gabfire themes include a media module that makes embedding media simple.
+Videos and pictures don't have to be difficult. With Gabfire Media Module, you can extend the functionality of WordPress Featured Image to support locally hosted HTML5 or Youtube, Vimeo, Dailymotion Videos and to Default Post Thumbnails.
+
+Plugin will first check if videos are enabled. If yes, it will try to get video URL for a locally hosted MP4/OGV or WEBM file and display the video with a nice HTML5 player. You can optionally add a subtitle to your video as well.
+
+If there are no video and thumbnails are enabled, the featured of post will be returned.
+
+If post has no featured image and default image is enabled, a default category image or site logo - basically whatever you wanted to show- will be displayed.
 
 This plugin is maintained by the folks over at http://www.gabfirethemes.com
 
