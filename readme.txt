@@ -11,11 +11,11 @@ Gabfire Media Module extends the functionality of Featured Image to support Vide
 
 == Description ==
 
-Videos and pictures don't have to be difficult. With Gabfire Media Module, you can extend the functionality of WordPress Featured Image to support locally hosted HTML5 or Youtube, Vimeo, Dailymotion Videos and to Default Post Thumbnails.
+Videos and pictures don't have to be difficult. With Gabfire Media Module, you can extend the functionality of WordPress Featured Image to support locally hosted HTML5 or Youtube, Vimeo, Dailymotion Videos. And ofcourse, you can also set a default image to show if there is no video/featured image.
 
-Plugin will first check if videos are enabled. If yes, it will try to get video URL for a locally hosted MP4/OGV or WEBM file and display the video with a nice HTML5 player. You can optionally add a subtitle to your video as well.
+Plugin will first check whether the videos are enabled or not. If yes, it will try to get the URL for a locally hosted MP4/OGV or WEBM file and play it with a nice HTML5 player. You can optionally add a subtitle (SRT or WebVTT) to your video as well.
 
-If there are no video and thumbnails are enabled, the featured of post will be returned.
+The Featured Image of post will show if there is not any video available.
 
 If post has no featured image and default image is enabled, a default category image or site logo - basically whatever you wanted to show- will be displayed.
 
