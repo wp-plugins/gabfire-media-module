@@ -19,7 +19,7 @@ We strongly suggest you to use this plugin together with
 https://wordpress.org/plugins/otf-regenerate-thumbnails/
 
 = Sample Code =
-<?php 
+`<?php 
 gabfire_media(array(
 	'name' => 'figure', 
 	'imgtag' => 1,
@@ -33,7 +33,7 @@ gabfire_media(array(
 	'enable_default' => 1,
 	'default_name' => 'defaultimage.png'
 )); 
-?>
+?>`
 
 name -> Name of post thumbnail to be used thats going to be resized to display featured image
 imgtag -> 1 or 0. Using this option you can add/remove '<img src' tag to image. 
