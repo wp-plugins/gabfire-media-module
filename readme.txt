@@ -1,4 +1,4 @@
-=== Gabfire Widget Pack ===
+=== Gabfire Media Module ===
 Contributors: gabfire
 Tags: video, html5 video, oembed, videojs, featured image, post thumbnail
 Requires at least: 3.8
@@ -55,12 +55,12 @@ default_name -> name of image to display. The image path is yourtheme/images/thu
 
 == Installation ==
 
-You can install the Gabfire Widget Pack from your WordPress Dashboard or manually via FTP.
+You can install the Gabfire Media module Pack from your WordPress Dashboard or manually via FTP.
 
 = From WordPress Dashboard =
 
 # Navigate to 'Plugins -> Add New' from your WordPress dashboard.
-# Search for `Gabfire Widget Pack` and install it.
+# Search for `Gabfire Media Module` and install it.
 # Activate the plugin from Plugins menu.
 
 = Manual Installation =
