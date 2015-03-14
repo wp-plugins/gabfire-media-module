@@ -1,0 +1,69 @@
+.gabfire_fieldgroup {
+	display:block;
+	margin-bottom:10px;
+	padding-bottom:10px;
+	border-bottom:1px dashed #ddd
+}
+.gabfire_fieldgroup:last-child {
+	margin:0;
+	padding-bottom:0;
+	border-bottom:none
+}
+.gabfire_fieldrow {
+	width:100%;
+	overflow:hidden;
+}
+.gabfire_fieldcaption {
+	font:19px/22px georgia, serif;letter-spacing:-1px
+}
+.gabfire_fieldgroup label {
+	width:39%;
+	margin-right:1%;
+	float:left;
+	padding-top:4px;
+	margin:0;
+}
+.gabfire_fieldgroup input {
+	width:60%;
+	float:left;
+	margin:0;
+}
+.gabfire_fieldgroup textarea {
+	width:60%;
+	height:50px !important;
+}
+
+/* Row with checkbox */
+.gabfire_fieldgroup.field_checkbox label {
+	width:60%;
+	margin-right:30px;
+}
+.gabfire_fieldgroup.field_checkbox .gabfire_checkbox {
+	width:25px;
+	float:left
+}
+
+/* Row with two input fields*/
+.gabfire_fieldgroup.fields_twoinputs .width_large{
+	width:45%;
+	margin-right:1%;
+}
+.gabfire_fieldgroup.fields_twoinputs .width_small {
+	width:14%;
+}
+.gabfire_fieldgroup.fields_twoinputs .width_equal{
+	width:30%;
+	width: -moz-calc(30% - 10px);
+	width: -webkit-calc(30% - 10px);
+	width: -o-calc(30% - 10px);
+	margin-right:10px
+}
+
+/* Deprecated */
+.gab_fieldrow {overflow:hidden}
+.gab_caption {font:19px/17px georgia, serif;letter-spacing:-1px}
+.clear {clear:both}
+.gab_fieldname {width:48%;float:left;}
+.gab_fieldinput {width:48%;float:right;}
+.gab_fieldinput .gab_textfield {width:100%;margin:0;padding:4px;border:1px solid #ccc}
+.gab_hr {padding-bottom:10px;border:none;height:1px;border-bottom:1px dashed #ddd;margin-bottom:10px}
