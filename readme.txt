@@ -2,7 +2,7 @@
 Contributors: gabfire
 Tags: video, html5 video, oembed, videojs, featured image, post thumbnail
 Requires at least: 3.8
-Tested up to: 4.1.1
+Tested up to: 4.2
 Stable tag: 0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
