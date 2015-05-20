@@ -4,7 +4,7 @@
 	Plugin URI: http://www.gabfirethemes.com
 	Description: Gabfire Media Module extends the functionality of WordPress Featured Image to support Videos and Default Post Images.
 	Author: Gabfire Themes
-	Version: 0.3
+	Version: 0.4
 	Author URI: http://www.gabfirethemes.com
 
     Copyright 2015 Gabfire Themes (email : info@gabfire.com)
@@ -78,39 +78,37 @@ function gabfire_mediaplugin_oembedvideo ($parameters){
 
 /* Lets get the featured image if video is disabled or no video avaiable */
 function gabfire_mediaplugin_thumbnail ($parameters){
-	global $post, $image;
+	global $post;
+	$image_id = get_post_thumbnail_id(); 
+	$image_url = wp_get_attachment_image_src($image_id,$parameters['name']);  
+	$image_url = $image_url[0]; 
 	
-	$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
-	$url = $thumb['0'];
+	/* Get the alt text of image if available */
+	$alt_text = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
 	
-	if ($parameters['resize_type'] == 'c') { 
-		$params = array( 'width' => $parameters['media_width'], 'height' => $parameters['media_height'] );
-		
-	} elseif ($parameters['resize_type'] == 'w') {  
-		$params = array( 'width' => $parameters['media_width'] );
-		
-	} elseif ($parameters['resize_type'] == 'h') {
-		$params = array( 'height' => $parameters['media_height'] );
+	if( !empty( $alt_text )){
+		$title = $alt_text;
+	} else {
+		$title = get_the_title();
 	}
 	
 	if ($parameters['link'] == 1) {
-		echo '<a href="' . get_the_permalink() . '" rel="bookmark">';
+		echo "<a href='". get_permalink() . "' rel='bookmark'>";	
 	}
 	
 	if ($parameters['imgtag'] == 1) { 
-		echo '<img src="';
+		echo "<img src='";
 	}
 	
-	$image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), $parameters['name'], false, '' );
-	echo $image[0];
+	echo $image_url;
 	
 	if ($parameters['imgtag'] == 1) {  
-		echo '" class="'.$parameters['thumb_align'].'" alt="'. get_the_title() . '" title="'. get_the_title() . '" />'; 
-	}
+		echo "' class='".$parameters['thumb_align']."' alt='" . get_the_title() ."' title='" . $title ."' />";
+	}		
 	
 	if ($parameters['link'] == 1) {
-		echo '</a>'; 
-	} 
+		echo "</a>"; 
+	}	
 }
 
 /* No Video, No Featured Image?
