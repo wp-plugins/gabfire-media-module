@@ -4,7 +4,7 @@
 	Plugin URI: http://www.gabfirethemes.com
 	Description: Gabfire Media Module extends the functionality of WordPress Featured Image to support Videos and Default Post Images.
 	Author: Gabfire Themes
-	Version: 0.2
+	Version: 0.3
 	Author URI: http://www.gabfirethemes.com
 
     Copyright 2015 Gabfire Themes (email : info@gabfire.com)
