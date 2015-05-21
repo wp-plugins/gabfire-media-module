@@ -162,11 +162,11 @@ function gabfiremedia_save_meta_box_data( $post_id ) {
 }
 add_action( 'save_post', 'gabfiremedia_save_meta_box_data' );
 
-if ( !function_exists( 'gabfire_custom_fields_css' ) ) {
-	function gabfire_custom_fields_css() {
+if ( !function_exists( 'gabfiremedia_custom_fields_css' ) ) {
+	function gabfiremedia_custom_fields_css() {
 		wp_enqueue_style('gabfire-customfields-style', plugins_url() .'/gabfire-media-module/style.css' );
 	}
 	
-	add_action('admin_head-post.php', 'gabfire_custom_fields_css');
-	add_action('admin_head-post-new.php', 'gabfire_custom_fields_css');
+	add_action('admin_head-post.php', 'gabfiremedia_custom_fields_css');
+	add_action('admin_head-post-new.php', 'gabfiremedia_custom_fields_css');
 }
