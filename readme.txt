@@ -80,6 +80,12 @@ You can install the Gabfire Media module Pack from your WordPress Dashboard or m
 
 
 == Changelog ==
+= 0.4 =
+* Fix plugin to work fine with older Gabfire Themes
+
+= 0.2 =
+* Add Alt Text support for images
+
 = 0.2 =
 * Remove BFI Thumb
 * Add video fields a custom meta box
