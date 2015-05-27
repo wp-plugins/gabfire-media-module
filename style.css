@@ -16,6 +16,9 @@
 .gabfire_fieldcaption {
 	font:19px/22px georgia, serif;letter-spacing:-1px
 }
+.gabfire_fieldgroup small {
+	font-size:12px !important;
+}
 .gabfire_fieldgroup label {
 	width:39%;
 	margin-right:1%;
